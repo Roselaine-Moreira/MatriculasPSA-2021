@@ -1,0 +1,33 @@
+﻿@model Entidades.Models.Turma
+
+@{
+    ViewData["Title"] = "Matriculacancelada";
+}
+
+<div class="container-fluid">
+
+    <div class="row ">
+        <div class="col-md-12">
+            <div class="card" style="width: 20rem;margin:0 auto;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="float-right">
+                            <a class="btn btn-outline-success pull-right" asp-area="" asp-controller="Turmas" asp-action="Matriculas"><b>X</b></a>
+                        </div>
+                    </div>
+                </div>
+                <img class="card-img-top" src="~/img/positivo.png">
+                <div class="card-body text-center">
+                    <h5 class="card-title">@ViewData["Titulo"]</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

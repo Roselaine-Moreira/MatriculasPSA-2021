@@ -1,0 +1,47 @@
+﻿@model Entidades.Models.Aluno
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@
+
+<div class="text-center">
+    <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded shadow-sm">
+        <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">Central de Matrículas</h6>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Ver histórico</h5>
+                        <a class="btn btn-primary" asp-controller="Historicos" asp-action="Index">Consultar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Consultar disciplinas</h5>
+                        <a class="btn btn-primary" asp-controller="Turmas" asp-action="Index">Consultar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Matrícula</h5>
+                        @*<a asp-action="Details" asp-route-id="@item.TurmaId">Details</a>*@
+                        <a class="btn btn-outline-primary" asp-controller="Turmas" asp-action="Matriculas" >Entrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

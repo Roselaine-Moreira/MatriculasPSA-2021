@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Entidades.Models.Turma>
+
+
+@{
+    ViewData["Title"] = "Consulta de Turmas";
+}
+
+<h1>Consulta de Turmas</h1>
+
+
+<form asp-action="Index" method="get" class="my-4">
+    <div class="form-actions no-color">
+        <p>
+            Digite: <input type="text" name="valorPesquisa" value="@ViewData["CurrentFilter"]" />
+            <input class="btn-secondary" type="submit" value="Pesquisar" /> |
+            <a class="btn-outline-info" asp-action="Index">Limpar Pesquisa</a>
+        </p>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeTurma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Horario)
+
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Disciplina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disciplina.CodCred)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroDeVaga)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeTurma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Horario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Disciplina.NomeDisciplina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Disciplina.CodCred)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroDeVaga)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+

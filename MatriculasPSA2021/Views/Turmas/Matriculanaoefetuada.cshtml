@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Matriculanaoefetuada";
+}
+
+
+<div class="container-fluid">
+
+    <div class="row ">
+        <div class="col-md-12">
+            <div class="card" style="width: 20rem;margin:0 auto;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="float-right">
+                            <a class="btn btn-outline-danger pull-right" asp-controller="Turmas" asp-action="Matriculas"><b>X</b></a>
+                        </div>
+                    </div>
+                </div>
+                <img class="card-img-top" src="~/img/negativo.png">
+                <div class="card-body text-center">
+                    <h5 class="card-title">@ViewData["Titulo"]</h5>
+                    <p>@ViewData["Message"]</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

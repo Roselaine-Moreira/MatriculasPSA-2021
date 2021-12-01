@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Entidades.Models.Aluno">
+    <Position X="1" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAQAAABAABAAAAAAAAAAAAAAgAAAAAQAAAAA=</HashCode>
+      <FileName>Models\Aluno.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Models.Disciplina">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAACAAAAAAIABAAAgAAAAAAAAAAAgAEAAAAAAAA=</HashCode>
+      <FileName>Models\Disciplina.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Models.Historico">
+    <Position X="3.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAAAAAAIAAAAAAAAAAAAAAAAAAAAAgAAAEAEAABAAA=</HashCode>
+      <FileName>Models\Historico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Models.Matricula">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAIAAAAAAAIAACAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Models\Matricula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Models.Requisito">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Models\Requisito.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Models.Turma">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEIAAAAAAAACAAAAAIAAAgAAAAAAEAAAABAAg=</HashCode>
+      <FileName>Models\Turma.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

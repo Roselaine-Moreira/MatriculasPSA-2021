@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Entidades.Models.Turma>
+
+
+
+@{
+    ViewData["Title"] = "Exibematricula";
+}
+
+<h1>Minhas Matrículas</h1>
+
+<a class="btn btn-outline-info my-3" asp-action="GeraComprovante">Comprovante de Matrícula</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeTurma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Horario)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disciplina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disciplina.CodCred)
+            </th>
+            <th>
+                Vagas
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeTurma)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Horario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Disciplina.NomeDisciplina)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Disciplina.CodCred)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumeroDeVaga)
+                </td>
+                <td>
+                    <a class="btn btn-outline-danger" asp-action="CancelaMatricula" asp-route-id="@item.TurmaId">Cancelar Matrícula</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
